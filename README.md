@@ -3,7 +3,17 @@
 This repository contains the extended abstract and research findings for a reproduction and extension of Marks & Tegmark’s *"The Geometry of Truth"* (2023). This work was prepared for the **EEML 2026 Reproduction Track**.
 
 ## 📄 Research Abstract
-[Copy and paste the abstract text from your PDF here]
+We reproduce “The Geometry of Truth” (Marks & Tegmark, 2023), confirming
+that Mass-Mean (MM) probes are more causally implicated in representing factual
+truth than Logistic Regression (LR) probes in LLaMA-2-13B. However, we reveal
+severe generalization vulnerabilities: probes overfit to structural heuristics unless
+datasets are perfectly balanced. Extending this work, we evaluate LLaMA-3.1-
+8B-Instruct, finding improved native decoupling of numerical and factual truth.
+We also demonstrate cross-lingual transfer, evaluating an English-trained probe
+on French (97.3%), Spanish (92.0%), and Serbian (76.7%) text. Finally, we test
+the probe against the Apollo Deception dataset (Goldowsky-Dill et al., 2025). It
+completely fails to distinguish honest from deceptive prompts, suggesting linear
+truth probes detect objective semantic correlations rather than strategic intent.
 
 ## 🚀 Key Technical Extensions
 *   **Model Scaling:** Evaluated truth-direction emergence in **LLaMA-3.1-8B-Instruct**, identifying Layer 10 as a critical information bottleneck.
